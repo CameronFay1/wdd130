@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 15px 0;
+
+}
+
+header {
+    font-size: larger;
+}
+
+header,
+footer {
+    background-color: darkslategray;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1px;
+
+}
+
+footer {
+    font-size: smaller;
+
+}
+
+main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 30px rgb(27, 26, 26);
+}
+
+h2 {
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+}
