@@ -19,26 +19,18 @@ body {
     font-family: var(--body-font);
 }
 
-/* .hero article {
-    position: absolute;
-    bottom: 270px;
-    background-color: rgb(0, 0, 255, .5);
-    color: white;
-} */
-
 header,
 main,
 footer,
-body {
-    width: 840px;
-    margin: 0 auto;
+{
+width: 840px;
+margin: 0 auto;
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--seondary-text-color);
-
 }
 
 nav,
