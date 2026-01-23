@@ -19,12 +19,12 @@ body {
     font-family: var(--body-font);
 }
 
-.hero article {
+/* .hero article {
     position: absolute;
     bottom: 270px;
     background-color: rgb(0, 0, 255, .5);
     color: white;
-}
+} */
 
 header,
 main,
