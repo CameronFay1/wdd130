@@ -54,15 +54,6 @@ article {
     height: auto;
 }
 
-h2 {
-
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
 h1 {
     position: absolute;
     top: 20px;
@@ -76,11 +67,22 @@ h1 {
 
 .hero article {
     position: absolute;
+    background-color: rgb(0, 0, 255, .7);
+    bottom: 1px;
+}
+
+.hero p {
+    color: wheat;
 }
 
 .hero article img {
     float: right;
     width: 125px;
+}
+
+h2 {
+    background-color: blue;
+    text-align: center;
 }
 
 footer {
