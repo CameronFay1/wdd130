@@ -1,18 +1,62 @@
 :root {
     --primary-color: blue;
-    --seondary-text-color: lightgray;
+    --secondary-color: lightblue;
+    --secondary-text-color: lightgray;
     --heading-font: "Times New Roman", "georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
-    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 0;
     box-sizing: border-box;
 }
 
+header {
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    margin: 10px;
+}
+
+header nav {
+    display: flex;
+    place-items: center;
+}
+
+header nav a {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .socialmedia img {
     max-width: 40px;
+}
+
+.adventure {
+    background-color: var(--secondary-color);
+}
+
+.adventure figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.adventure img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.adventure h2 {
+    grid-column: span 5;
 }
 
 body {
@@ -26,10 +70,24 @@ footer {
     margin: 0 auto;
 }
 
-h1,
+.split {
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    background-color: var(--secondary-color);
+}
+
+.split img {
+    width: 100%;
+}
+
+.split-1 {
+    grid-column: span 3;
+}
+
+.split img h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--seondary-text-color);
+    color: var(--secondary-text-color);
 }
 
 nav,
@@ -87,4 +145,10 @@ h2 {
 
 footer {
     border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+footer p {
+    grid-column: 2;
 }
