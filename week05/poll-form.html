@@ -5,37 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
     <header>
-
+        <h1>WDD 130 | HTML Form - User Poll</h1>
     </header>
     <main>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <form>
+            <fieldset>
+                <legend>Contact Inforamtion</legend>
+                <div class="from-item column2">
 
-        <lebel for="quantity">What is your favorite browser?</lebel>
-        <select name="quantity" id="quantity">
-            <option value="1">google chrome</option>
-            <option value="2">microsoft edge</option>
-            <option value="3">vivaldi</option>
-            <option value="4">Opera</option>
-            <option value="5">Firefox</option>
-            <option value="6">DuckDuckGo</option>
-            <option value="7">Brave</option>
-            <option value="8">Safari</option>
-        </select>
-        <label for="pet">Do you have a household pet?</label>
-        <input type="checkbox" id="pet" name="pet">
-        <label for="feedback">List the places you have lived.</label>
-        <textarea id="feedback" name="feedback" rows="4"
-          placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="from-item column2">
 
-        <button type="submit">Submit</button>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="quantity">What is your favorite browser?</label>
+                    <select name="quantity" id="quantity">
+                        <option value="1">google chrome</option>
+                        <option value="2">microsoft edge</option>
+                        <option value="3">vivaldi</option>
+                        <option value="4">Opera</option>
+                        <option value="5">Firefox</option>
+                        <option value="6">DuckDuckGo</option>
+                        <option value="7">Brave</option>
+                        <option value="8">Safari</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <label for="feedback">List the places you have lived.</label>
+                <textarea id="feedback" name="feedback" rows="4"
+                  placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
     </main>
+    <footer>
+        <p>©2026 cameron fay SLC, UT</p>
+    </footer>
 </body>
 
 </html>
